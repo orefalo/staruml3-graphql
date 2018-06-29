@@ -1,0 +1,20 @@
+# A mechanical creature in the Star Wars universe.
+type Droid {
+  # The id of the droid.
+  id: ID!
+
+  # The name of the droid.
+  name: String
+
+  # The friends of the droid, or an empty list if they have none.
+  friends: [String]
+
+  # Which movies they appear in.
+  appearsIn: [String]
+
+  # Construction date and the name of the designer.
+  secretBackstory: String
+
+  # The primary function of the droid.
+  primaryFunction: String
+}

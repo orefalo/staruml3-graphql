@@ -1,0 +1,19 @@
+{
+    type: "ENUM",
+    name: "Episode",
+    description: "One of the films in the Star Wars Trilogy",
+    values: [
+      {
+        description: "Released in 1977.",
+        name: "NEWHOPE"
+      },
+      {
+        description: "Released in 1980.",
+        name: "EMPIRE"
+      },
+      {
+        description: "Released in 1983.",
+        name: "JEDI"
+      }
+    ]
+  }

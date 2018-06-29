@@ -1,0 +1,37 @@
+#toolbar-graphql {
+  background-color: transparent;
+  background-image: url("icon_graphql.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
+#toolbar-graphql.selected {
+  background-position: -24px 0;
+}
+#graphql-preview .toolbar {
+  height: 35px;
+}
+#graphql-preview .title {
+  padding-top: 8px;
+}
+#graphqleditable {
+  overflow: auto;
+  padding: 2px;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  text-shadow: none;
+  outline-color: transparent;
+  outline-style: none;
+}
+
+#snapcore {
+  background-color: transparent;
+  background-image: url("snapcore.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  margin: 2em;
+  width: 140px;
+  height: 91px;
+}

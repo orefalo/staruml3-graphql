@@ -1,0 +1,33 @@
+{
+  "id": "graphql",
+  "name": "GraphQL",
+  "schema": {
+    "graphql.gen": {
+      "text": "GraphQL Code Generation",
+      "type": "section"
+    },
+    "graphql.gen.idlDoc": {
+      "text": "IDL Comments",
+      "description": "Generate comments from Element's documentation.",
+      "type": "check",
+      "default": true
+    },
+    "graphql.gen.indentSpaces": {
+      "text": "Indent Spaces",
+      "description": "Number of spaces for line indentation.",
+      "type": "number",
+      "default": 4
+    },
+
+    "graphql.debug": {
+      "text": "Debug",
+      "type": "section"
+    },
+    "graphql.debug.status": {
+      "text": "Debug on console",
+      "description": "Output debug information on Console.",
+      "type": "check",
+      "default": false
+    }
+  }
+}

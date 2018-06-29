@@ -1,0 +1,18 @@
+{
+  "name": "orefalo.staruml-graphql",
+  "title": "GraphQL extension for StarUML",
+  "version": "3.0.0",
+  "description": "GraphQL IDL schema generation for StarUML",
+  "homepage": "https://github.com/orefalo/staruml3-graphql",
+  "issues": "https://github.com/orefalo/staruml3-graphql/issues",
+  "keywords": ["GraphQL", "UML", "staruml", "Modeling"],
+  "author": {
+    "name": "Olivier Refalo",
+    "email": "orefalo@yahoo.com",
+    "url": "https://github.com/orefalo"
+  },
+  "license": "GPLv3",
+  "engines": {
+    "staruml": ">=3.0.0"
+  }
+}

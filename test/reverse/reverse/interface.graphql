@@ -1,0 +1,18 @@
+
+# This is a test interface
+interface Character {
+  # The id of the character.
+  id: ID!
+
+  # The name of the character.
+  name: String
+
+  # The friends of the character, or an empty list if they have none.
+  friends: [String]
+
+  # Which movies they appear in.
+  appearsIn: [String]
+
+  # All secrets about their past.
+  secretBackstory: String
+}

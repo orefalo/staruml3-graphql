@@ -1,0 +1,32 @@
+{
+  "menu": [
+    {
+      "id": "tools",
+      "submenu": [
+        {
+          "label": "GraphQL",
+          "id": "tools.graphql",
+          "submenu": [
+            { "label": "Generate IDL...", "id": "tools.graphql.generate", "command": "graphql:generate" },
+            { "type": "separator" },
+            { "label": "Configure", "id": "tools.graphql.configure", "command": "graphql:configure" },
+            { "label": "About", "id": "tools.graphql.about", "command": "graphql:about" }
+ 
+          ]
+        }
+      ]
+    },
+    {
+      "id": "view",
+      "submenu": [
+        { "type": "separator" },
+        {
+          "label": "GraphQL Preview",
+          "id": "view.graphql-view",
+          "type": "checkbox",
+          "command": "graphql:toggle.preview"
+        }
+      ]
+    }
+  ]
+}
