@@ -1,4 +1,4 @@
-GraphQL Extension for StarUML 2
+GraphQL Extension for StarUML 3
 ============================
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N7GUM99ZAU738)
@@ -8,12 +8,12 @@ This extension for StarUML(http://staruml.io) supports the generation of GraphQL
 What's new
 ----
 
-Jan 10th 2018:
-
-* **Bug:** Fixed a extend statement bug with the following structure Class->AbstractClass->Class
+June 29th 2018:
+* **New Feature:** StarUML3 support, enjoy!
 
 Past:
 
+* **Bug:** Fixed a extend statement bug with the following structure Class->AbstractClass->Class
 * **New Feature:** Give great flexibility to your diagram but using Abstract classes. Abstract classes keept their full meaning in a class hierachy, but are not generated.
 * **New Feature:** Allow graphQL generation in a ui panel
 * **New Feature:** You may now generate from the top project level
