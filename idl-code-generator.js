@@ -225,10 +225,8 @@ class IDLCodeGenerator {
    * @param {Object} options
    */
   writeClass(codeWriter, elem, options, keyword) {
-    let i,
-      len,
-      terms = [];
-    //, self = this;
+    let i, len;
+    const terms = [];
 
     // Doc
     this.writeDoc(codeWriter, elem.documentation, options);
@@ -631,7 +629,7 @@ class IDLCodeGenerator {
    */
   writeDoc(codeWriter, text, options) {
     let i, len, lines, v;
-    if (options.gqDoc && typeof text === "string") {
+    if (options.idlDoc && typeof text === "string") {
       lines = text.trim().split("\n");
       for (i = 0, len = lines.length; i < len; i++) {
         v = lines[i].trim();

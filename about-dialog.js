@@ -1,8 +1,7 @@
-//@ts-ignore
+//@ts-nocheck
+/*global $, app, type, __dirname*/
 
 "use strict";
-
-/*global $, app, type, __dirname*/
 
 const { shell } = require("electron");
 const fs = require("fs");

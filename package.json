@@ -1,7 +1,7 @@
 {
   "name": "orefalo.staruml-graphql",
   "title": "GraphQL extension for StarUML",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "GraphQL IDL schema generation for StarUML",
   "homepage": "https://github.com/orefalo/staruml3-graphql",
   "issues": "https://github.com/orefalo/staruml3-graphql/issues",
