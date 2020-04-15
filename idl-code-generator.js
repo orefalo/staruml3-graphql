@@ -469,7 +469,11 @@ class IDLCodeGenerator {
         paramTerms.push(s);
       }
 
-      terms.push(elem.name + "(" + paramTerms.join(", ") + ")");
+      if (paramTerms.length > 0) {
+        terms.push(elem.name + "(" + paramTerms.join(", ") + ")");
+      } else {
+        terms.push(elem.name);
+      }
 
       // return type
       if (returnParam) {
