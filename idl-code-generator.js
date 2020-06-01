@@ -469,7 +469,11 @@ class IDLCodeGenerator {
         paramTerms.push(s);
       }
 
-      terms.push(elem.name + "(" + paramTerms.join(", ") + ")");
+      if (paramTerms.length > 0) {
+        terms.push(elem.name + "(" + paramTerms.join(", ") + ")");
+      } else {
+        terms.push(elem.name);
+      }
 
       // return type
       if (returnParam) {
@@ -631,9 +635,19 @@ class IDLCodeGenerator {
     let i, len, lines, v;
     if (options.idlDoc && typeof text === "string") {
       lines = text.trim().split("\n");
+      if (lines.length > 0) {
+        if (lines[0].trim().length > 0) {
+          codeWriter.writeLine("\"\"\"");
+        }
+      }
       for (i = 0, len = lines.length; i < len; i++) {
         v = lines[i].trim();
-        if (v.length > 0) codeWriter.writeLine("# " + lines[i]);
+        if (v.length > 0) codeWriter.writeLine(lines[i]);
+      }
+      if (lines.length > 0) {
+        if (lines[0].trim().length > 0) {        
+          codeWriter.writeLine("\"\"\"");
+        }
       }
     }
   }
