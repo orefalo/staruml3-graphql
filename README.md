@@ -3,7 +3,7 @@ GraphQL Extension for StarUML 3
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=N7GUM99ZAU738)
 
-This extension for StarUML(http://staruml.io) supports the generation of GraphQL IDL schemas from UML models. 
+This extension for StarUML(http://staruml.io) supports the generation of GraphQL IDL schemas from UML models.
 
 What's new
 ----
@@ -44,13 +44,13 @@ Generation
 
 **Disclaimer:** Neither StarUML nor this generator can enforce the limitations governed by the GraphQL expression language. It is of your responsibility to create data structures that will comply with the GraphQL specifications.
 
-###GraphQL IDL Notation
+### GraphQL IDL Notation
 
 Let's start with the basics.
 
 ![](images/GraphqLCheatSheet.png)
 
-###Classes, Default values & Directives
+### Classes, Default values & Directives
 
 So let's start with a basic class generation.
 Here class attributes are given a type and a default value. We also made v3 a required field. Finally we added documentation here and there to demo what the generator does.
@@ -85,7 +85,7 @@ type DirectiveClass {
 ```
 
 
-###Scalars & Enums
+### Scalars & Enums
 
 Scalars and Enumerations are supported by StarUML's native _Primitive_ and _Enumeration_ types. Please ensure you use these native StarUML types in order to generate the expected artifacts.
 
@@ -103,7 +103,7 @@ enum Enumeration1 {
 ```
 
 
-###Union types
+### Union types
 
 Union types are defined by using _Dependencies_. Typically Unions do not carry any attributes or relations. The generator will warn when it encounters such structure.
 
@@ -128,7 +128,7 @@ union AnimalUnionType = Cat | Dog
 # WARNING: Attributes on union types is not GraphQL compliant, ignoring.
 ```
 
-###Associations, Aggregation & Composition
+### Associations, Aggregation & Composition
 
 Important facts, associations are:
 
@@ -196,7 +196,7 @@ type Component {
 }
 ```
 
-###Class and Interface hierarchies
+### Class and Interface hierarchies
 
 Unlike GraphQL syntax, there is no need to repeat the attribute definition across the hierarchy. The generator takes care of it, Neat!
 
@@ -311,7 +311,7 @@ interface I2 extends I1 {
 ```
 
 
-###Schemas, Mutations
+### Schemas, Mutations
 
 ![](images/schema_query_mutation_subscriptions__schema_and_more_7.png)
 
@@ -391,7 +391,7 @@ The following rules apply during generation.
 * `name` property to field identifier.
 * `type` property to field type, defaults to String.
 * `multiplicity` property to array type and/or required constraint.
-* GraphQL directives implemented via attribute's Tag(name, value) 
+* GraphQL directives implemented via attribute's Tag(name, value)
 * GraphQL directives can also be modeled via an attribute Constraint(name, specification) - in which case they will not display in the diagram
 * Default values generation.
 * Documentation property to GraphQL comment.
@@ -405,7 +405,7 @@ The following rules apply during generation.
 * _UMLParameter_'s type property to type of parameter.
 * _UMLParameter_'s `multiplicity` property to array type and/or required constraint.
 * _UMLParameter_ with `direction` = `return` to return type of method.
-* GraphQL directives implemented via attribute's Tag(name, value) 
+* GraphQL directives implemented via attribute's Tag(name, value)
 * GraphQL directives can also be modeled via an attribute Constraint(name, specification) - in which case they will not display in the diagram
 * Documentation property to GraphQL comment.
 
@@ -495,7 +495,7 @@ About the Author
 
 My name is [Olivier Refalo](https://www.linkedin.com/in/orefalo/), author behind this StarUML extension. I am an Innovator, a Digital transformer, a skilled  Architect, a Leader and an Entrepreneur.
 
-Over the years I grew extensive knowledge around data modeling, reactive technologies, business processes, integrations and enterprise architecture. 
+Over the years I grew extensive knowledge around data modeling, reactive technologies, business processes, integrations and enterprise architecture.
 Lately I grew my technical skills around GraphQL which I see as an elegant way to solve the "middleware mess" with an inversion of control approach.
 
 I believe in open source as a way to drive innovations and share knowledge, this project is yet another way to contribute back to the community. With that said, if you *do use* this project, please consider:
